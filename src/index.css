@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  /* Main backgrounds */
+  --color-canvas: #F6F7FB;
+  --color-surface: #FFFFFF;
+  --color-surface-soft: #FBFBFD;
+
+  /* Borders */
+  --color-line: #E7E9F0;
+  --color-line-strong: #D9DDE7;
+
+  /* Typography */
+  --color-ink: #171923;
+  --color-ink-soft: #343846;
+  --color-muted: #777E90;
+
+  /* Brand */
+  --color-primary: #635BFF;
+  --color-primary-hover: #5147E5;
+  --color-primary-soft: #F0EFFF;
+
+  /* Task status */
+  --color-todo: #4F7CFF;
+  --color-doing: #D99100;
+  --color-done: #21A179;
+
+  /* Priority */
+  --color-high: #D94A55;
+  --color-medium: #B7791F;
+  --color-low: #2F8F6B;
+
+  /* Fonts */
+  --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ========================================
+   Global reset
+======================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--color-canvas);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  background: var(--color-canvas);
+  color: var(--color-ink);
+
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ========================================
+   Form elements
+======================================== */
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ========================================
+   Text selection
+======================================== */
+
+::selection {
+  background: rgba(99, 91, 255, 0.18);
+}
+
+/* ========================================
+   Scrollbar
+======================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4D8E2;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B8BECA;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+/* ========================================
+   Accessible focus style
+======================================== */
+
+.focus-ring:focus-visible {
+  outline: 3px solid rgba(99, 91, 255, 0.2);
+  outline-offset: 2px;
+}
