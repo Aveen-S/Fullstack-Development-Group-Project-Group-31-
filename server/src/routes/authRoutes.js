@@ -1,3 +1,4 @@
+// Member 4: Auth Express Routes
 const express = require("express");
 const { registerUser } = require("../controllers/registerController");
 const { loginUser, getMe } = require("../controllers/authController");
@@ -10,3 +11,4 @@ router.post("/login", loginUser);
 router.get("/me", protect, getMe);
 
 module.exports = router;
+

@@ -1,7 +1,7 @@
 {
   "name": "collabboard-server",
   "version": "1.0.0",
-  "description": "Backend API for CollabBoard",
+  "description": "Backend API for CollabBoard (User Auth & Management)",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
