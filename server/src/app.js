@@ -1,6 +1,7 @@
 const express = require("express");
 const authRoutes = require("./routes/authRoutes");
 const userRoutes = require("./routes/userRoutes");
+const boardRoutes = require("./routes/boardRoutes");
 const cors = require("cors");
 const helmet = require("helmet");
 const rateLimit = require("express-rate-limit");
@@ -60,6 +61,7 @@ app.use(express.urlencoded({ extended: true }));
 // ================================
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
+app.use("/api/boards", boardRoutes);
 
 // ================================
 // API Health Check
