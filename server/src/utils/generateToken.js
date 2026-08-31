@@ -1,3 +1,4 @@
+// Member 4: JWT Token Generator
 const jwt = require("jsonwebtoken");
 
 const generateToken = (id) => {
@@ -10,3 +11,4 @@ const generateToken = (id) => {
 };
 
 module.exports = generateToken;
+

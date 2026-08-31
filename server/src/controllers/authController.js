@@ -1,3 +1,4 @@
+// Member 4: User Authentication Controller (Login & Profile)
 const bcrypt = require("bcryptjs");
 const User = require("../models/User");
 const generateToken = require("../utils/generateToken");
@@ -94,3 +95,4 @@ module.exports = {
   loginUser,
   getMe,
 };
+
