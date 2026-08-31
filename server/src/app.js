@@ -1,5 +1,6 @@
 const express = require("express");
 const authRoutes = require("./routes/authRoutes");
+const boardRoutes = require("./routes/boardRoutes");
 const cors = require("cors");
 require("dotenv").config();
 
@@ -13,6 +14,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/api/auth", authRoutes);
+app.use("/api/boards", boardRoutes);
 
 // ================================
 // API Health Check
